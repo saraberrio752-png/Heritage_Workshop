@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeometricFigure.Backend
+namespace GeometricFigures.Backend
 {
-    internal class Circle : GeometricFigure
+     public class Circle : GeometricFigure
     {
         // Fields
         private double _r;

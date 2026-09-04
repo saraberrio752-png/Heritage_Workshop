@@ -4,29 +4,29 @@ using System.Text;
 
 namespace GeometricFigures.Backend
 {
-    public class Kite : Rhombus
+    public class Parallelogram : Rectangle
     {
         // Fields
-        private double _b;
-
+        private double _h;
 
         //Properties
-        public double B
+        public double H
         {
-            get => _b;
-            set => _b = ValidateB(value);
+            get => _h;
+            set => _h = ValidateH(value);
         }
 
         //Constructor method
-        public Kite(string name, double d1, double d2, double a, double b) : base(name, d1, d2, a)
+        public Parallelogram(string name, double a, double b, double h) : base(name, a, b)
         {
-            B = b;
+            H = h;
         }
+
 
         //Public methods
         public override double GetArea()
         {
-            return D1 * D2 / 2;
+            return H * B;
         }
 
         public override double GetPerimeter()
@@ -36,17 +36,18 @@ namespace GeometricFigures.Backend
 
         //Private methods
 
-        private double ValidateB(double b)
+        private double ValidateH(double h)
         {
-            if (b >= 0)
+            if (h >= 0)
             {
-                return b;
+                return h;
             }
             else
             {
-                throw new Exception($"The number of side {b} is a negative number ");
+                throw new Exception($"The number of height {h} is a negative number ");
             }
         }
-
     }
 }
+
+

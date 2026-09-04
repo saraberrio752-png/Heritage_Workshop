@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeometricFigure.Backend
+namespace GeometricFigures.Backend
 {
-    internal class Square : GeometricFigure
+    public class Square : GeometricFigure
     {
 
         // Fields

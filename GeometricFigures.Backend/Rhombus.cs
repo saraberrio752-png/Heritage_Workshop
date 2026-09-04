@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeometricFigure.Backend
+namespace GeometricFigures.Backend
 {
-    internal class Rhombus : Square
+    public class Rhombus : Square
     {
         // Fields
         private double _d1;

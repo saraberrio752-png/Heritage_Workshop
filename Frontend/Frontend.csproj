@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GeometricFigures.Backend\GeometricFigure.Backend.csproj" />
+    <ProjectReference Include="..\GeometricFigures.Backend\GeometricFigures.Backend.csproj" />
   </ItemGroup>
 
 </Project>
